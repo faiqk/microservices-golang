@@ -6,7 +6,7 @@ import (
 	// Import the generated protobuf code
 	"fmt"
 
-	pb "microservices-golang/consignment-service/proto/consignment"
+	pb "github.com/faiqk/microservices-golang/consignment-service/proto/consignment"
 
 	micro "github.com/micro/go-micro"
 	"golang.org/x/net/context"

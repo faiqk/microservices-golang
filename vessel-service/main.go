@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	pb "microservices-golang/vessel-service/proto/vessel"
+	pb "github.com/faiqk/microservices-golang/vessel-service/proto/vessel"
 
 	"github.com/micro/go-micro"
 )
