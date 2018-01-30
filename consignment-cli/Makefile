@@ -1,6 +1,5 @@
 build:
-	# GOOS=linux GOARCH=amd64 go build
-	GOOS=linux GOARCH=amd64
+	GOOS=linux GOARCH=amd64		# no 'go build' here, building in container
 	docker build -t consignment-cli .
 
 run:

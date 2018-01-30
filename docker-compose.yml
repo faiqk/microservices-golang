@@ -34,6 +34,11 @@ services:
       MICRO_ADDRESS: ":50051"
       MICRO_REGISTRY: "mdns"
 
+  user-cli:
+    build: ./user-cli
+    environment:
+      MICRO_REGISTRY: "mdns"
+
   database:
     image: postgres
     ports:

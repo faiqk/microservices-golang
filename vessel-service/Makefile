@@ -1,8 +1,6 @@
 build:
-	# protoc -I. --go_out=plugins=grpc:./ proto/vessel/vessel.proto # standard gRPC
 	protoc -I. --go_out=plugins=micro:./ proto/vessel/vessel.proto   # using go micro plugin
-	# GOOS=linux GOARCH=amd64 go build
-	GOOS=linux GOARCH=amd64
+	GOOS=linux GOARCH=amd64		# no 'go build' here, building in container
 	docker build -t vessel-service .
 
 run:

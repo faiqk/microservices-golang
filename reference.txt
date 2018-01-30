@@ -3,3 +3,22 @@ microservice tutorial series
 https://ewanvalentine.io/microservices-in-golang-part-1/
 https://ewanvalentine.io/microservices-in-golang-part-2/
 https://ewanvalentine.io/microservices-in-golang-part-3/
+
+
+----- docker handy commands ----
+docker ps
+docker stats
+
+docker-compose build
+
+docker-compose up -d
+docker-compose run consignment-cli
+docker stop $(docker ps -qa)
+
+create user thru user-cli
+-------
+docker-compose run user-cli command \
+  --name="Faiq Kazi" \
+  --email="faiq.kazi@fairfaxmedia.com.au" \
+  --password="test123" \
+  --company="Fairfax"
